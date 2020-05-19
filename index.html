@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de QR CODE</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <input
+        type="text"
+        id="qr-value"
+        class="s-input"
+        placeholder="Digite o URL aqui..."
+      />
+      <button class="s-button" onclick="gerarQR()">Criar codigo QR</button>
+      <div id="qr-code" class="qr-code"></div>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://davidshimjs.github.io/qrcodejs/qrcode.js"></script>
+    <script src="/assets/main.js"></script>
+  </body>
+</html>
